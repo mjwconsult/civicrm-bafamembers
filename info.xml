@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<extension key="bafamembers" type="module">
+  <file>bafamembers</file>
+  <name>CiviCRM customisations for BAFA members site</name>
+  <description>Customisations for the BAFA members site</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>Matthew Wire</author>
+    <email>mjw@mjwconsult.co.uk</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">https://github.com/mjwconsult/civicrm-bafamembers</url>
+    <url desc="Support">https://mjw.pt/support/bafamembers</url>
+    <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
+  </urls>
+  <releaseDate>2020-07-20</releaseDate>
+  <version>0.1</version>
+  <develStage>beta</develStage>
+  <compatibility>
+    <ver>5.24</ver>
+  </compatibility>
+  <classloader>
+    <psr4 prefix="Civi\" path="Civi"/>
+  </classloader>
+  <civix>
+    <namespace>CRM/Bafamembers</namespace>
+  </civix>
+</extension>
