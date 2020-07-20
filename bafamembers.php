@@ -154,6 +154,7 @@ function bafamembers_civicrm_searchTasks($objectType, &$tasks) {
       CRM_Contact_Task::TASK_EMAIL => 1,
       CRM_Contact_Task::CREATE_MAILING => 1,
       CRM_Contact_Task::TASK_EXPORT => 1,
+      CRM_Contact_TASK::LABEL_CONTACTS => 1,
     ];
     $tasks = array_intersect_key($tasks, $permittedTasks);
   }
