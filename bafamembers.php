@@ -137,7 +137,7 @@ function bafamembers_civicrm_entityTypes(&$entityTypes) {
 }
 
 /**
- * Implements hook_civicrm_thems().
+ * Implements hook_civicrm_themes().
  */
 function bafamembers_civicrm_themes(&$themes) {
   _bafamembers_civix_civicrm_themes($themes);
@@ -154,7 +154,7 @@ function bafamembers_civicrm_searchTasks($objectType, &$tasks) {
       CRM_Contact_Task::TASK_EMAIL => 1,
       CRM_Contact_Task::CREATE_MAILING => 1,
       // CRM_Contact_Task::TASK_EXPORT => 1, Provided via "Download as CSV" link on dataprocessor search
-      CRM_Contact_TASK::LABEL_CONTACTS => 1,
+      // CRM_Contact_TASK::LABEL_CONTACTS => 1,
     ];
     $tasks = array_intersect_key($tasks, $permittedTasks);
   }
