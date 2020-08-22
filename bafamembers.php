@@ -159,3 +159,15 @@ function bafamembers_civicrm_searchTasks($objectType, &$tasks) {
     $tasks = array_intersect_key($tasks, $permittedTasks);
   }
 }
+
+/**
+ * Intercept form functions
+ * @param string $formName
+ * @param CRM_Core_Form $form
+ */
+function bafamembers_civicrm_buildForm($formName, &$form) {
+  switch ($formName) {
+    case 'CRM_Contact_Form_DataProcessorContactSearch':
+      \Civi::resources()->addScriptFile(E::LONG_NAME, 'js/dataprocessor_contactsearch.js');
+  }
+}
