@@ -12,3 +12,4 @@ The extension is licensed under [AGPL-3.0](LICENSE.txt).
 ## Functionality
 
 * For non-admin users we filter the search actions to export and email/mailing.
+* Set title on dataprocessor contact search to group ID.
