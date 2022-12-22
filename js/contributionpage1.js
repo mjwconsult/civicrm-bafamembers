@@ -6,11 +6,13 @@
     var professionalSectorSelect = $('select#custom_27');
     var instituteField = $('div#editrow-custom_6');
     var instituteFieldHelp = $('div#helprow-custom_6');
+    var instituteInput = $('input#custom_6');
     var ukUniversityField = $('div#editrow-custom_25');
     var ukUniversityFieldHelp = $('div#helprow-custom_25');
     var professionalSectorField = $('div#editrow-custom_27');
     var professionalSectorFieldHelp = $('div#helprow-custom_27');
     var professionalSectorOtherField = $('div#editrow-custom_28');
+    var professionalSectorOtherInput = $('input#custom_28');
 
     // status radio selector
     $('input[name="custom_2"]').on('change', function() {
@@ -70,6 +72,7 @@
           // hide the institute field
           instituteField.hide();
           instituteFieldHelp.hide();
+          instituteInput.val('');
       }
     }
 
@@ -89,15 +92,17 @@
       ukUniversitySelect.select2().val('').trigger('change');
       ukUniversityField.hide();
       ukUniversityFieldHelp.hide();
-      instituteField.val('').hide();
+      instituteField.hide();
       instituteFieldHelp.hide();
+      instituteInput.val('');
     }
 
     function hideProfessionalSectorField() {
       professionalSectorSelect.select2().val('').trigger('change');
       professionalSectorField.hide();
       professionalSectorFieldHelp.hide();
-      professionalSectorOtherField.val('').hide();
+      professionalSectorOtherField.hide();
+      professionalSectorOtherInput.val('');
     }
 
     statusShowHideFields();
