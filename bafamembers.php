@@ -108,7 +108,7 @@ function bafamembers_civicrm_buildForm($formName, &$form) {
       break;
 
     case 'CRM_Contribute_Form_Contribution_Main':
-      if (file_exists(E::path("js/contribution{$form->_id}.js"))) {
+      if (file_exists(E::path("js/contributionpage{$form->_id}.js"))) {
         \Civi::resources()->addScriptFile(E::LONG_NAME, "js/contributionpage{$form->_id}.js");
       }
       break;

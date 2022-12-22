@@ -21,16 +21,19 @@
       var instituteField = $('div#editrow-custom_6');
       var instituteFieldHelp = $('div#helprow-custom_6');
       var ukUniversityField = $('div#editrow-custom_25');
+      var professionalSectorField = $('div#editrow-custom_27');
       switch (checkedInputID) {
         case 'CIVICRM_QFID_Student_custom_2':
         case 'CIVICRM_QFID_Academic_custom_2':
           // show uk university drop-down
           ukUniversityField.show();
+          professionalSectorField.hide();
           break;
 
         case 'CIVICRM_QFID_Professional_custom_2':
         case 'CIVICRM_QFID_Retired_Professional_custom_2':
           // show the professional sector drop-down
+          professionalSectorField.show();
           break;
 
         case 'CIVICRM_QFID_Retired_Academic_custom_2':
@@ -38,6 +41,7 @@
           ukUniversityField.hide();
           instituteField.hide();
           instituteFieldHelp.hide();
+          professionalSectorField.hide();
           break;
 
         case 'CIVICRM_QFID_Other_custom_2':
@@ -47,6 +51,7 @@
           ukUniversityField.hide();
           instituteField.hide();
           instituteFieldHelp.hide();
+          professionalSectorField.hide();
       }
     }
 
