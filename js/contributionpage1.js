@@ -40,11 +40,18 @@
           break;
 
         case 'CIVICRM_QFID_Professional_custom_2':
-        case 'CIVICRM_QFID_Retired_Professional_custom_2':
           // show the professional sector drop-down
           professionalSectorField.show();
           professionalSectorFieldHelp.show();
           hideUkUniversityField();
+          // show the institute field
+          instituteField.show();
+          break;
+
+        case 'CIVICRM_QFID_Retired_Professional_custom_2':
+          // show the professional sector drop-down
+          professionalSectorField.show();
+          professionalSectorFieldHelp.show();
           break;
 
         case 'CIVICRM_QFID_Retired_Academic_custom_2':
